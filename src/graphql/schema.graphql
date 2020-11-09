@@ -1,0 +1,23 @@
+enum DataTypes {
+  MockerType
+}
+
+interface DataSource {
+  dataType: DataTypes
+}
+
+type MockedBackEndDataSource implements DataSource {
+  dataType: DataTypes
+  yourMockedDataset(mockAttribute01: String): [yourMockedDataset]
+}
+
+type yourMockedDataset {
+  mockAttribute01: String!
+  mockAttribute02: String!
+  mockAttribute03: String!
+}
+
+type Query {
+  dataSources(dataType: DataTypes): [DataSource]
+}
+

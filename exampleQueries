@@ -1,0 +1,23 @@
+query mockQueryExample {
+  dataSources(dataType: MockerType) {
+    ... on MockedBackEndDataSource{
+      yourMockedDataset{
+        mockAttribute01
+        mockAttribute02
+        mockAttribute03
+      }
+    }
+  }
+}
+
+query mockQueryExampleWithFilter {
+  dataSources(dataType: MockerType) {
+    ... on MockedBackEndDataSource {
+      yourMockedDataset(mockAttribute01: "MockID: 010A") {
+        mockAttribute01
+        mockAttribute02
+        mockAttribute03
+      }
+    }
+  }
+}

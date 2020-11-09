@@ -1,0 +1,29 @@
+{
+  "dataSources": [
+    {
+      "dataType": "MockerType",
+      "yourMockedDataset": [
+        {
+          "mockAttribute01": "MockID: 010A",
+          "mockAttribute02": "Ship",
+          "mockAttribute03": "Mock Ship Name"
+        },
+        {
+          "mockAttribute01": "MockID: 011B",
+          "mockAttribute02": "Submarine",
+          "mockAttribute03": "Mock Submarine Name"
+        },
+        {
+          "mockAttribute01": "MockID: 012C",
+          "mockAttribute02": "Boat",
+          "mockAttribute03": "Mock Boat Name"
+        },        
+        {
+          "mockAttribute01": "MockID: 013D",
+          "mockAttribute02": "Port",
+          "mockAttribute03": "Mock Port Name"
+        }            
+      ]
+    }
+  ]
+}
